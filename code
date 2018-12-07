@@ -1,0 +1,7 @@
+function reverse(str){
+	return str.split('').reduce((rev, char)=>{
+  		return char+ rev;
+  });
+}
+
+alert(reverse('abcdx'));s
