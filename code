@@ -18,3 +18,17 @@ function cap(str){
 }
 
 alert(cap('a short sentence'));
+
+function pal(str){
+		let rev =  str.split('').reduce((rev,char)=>{
+    		return (char+rev);
+    });
+    
+    if(rev === str){
+    		alert(rev +' '+ str);
+    }else{
+    		alert(0);
+    }
+}
+
+pal('abba');
