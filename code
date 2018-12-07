@@ -32,3 +32,15 @@ function pal(str){
 }
 
 pal('abba');
+
+function solution(T) {
+    var Temp = []; 
+    // write your code in JavaScript (Node.js 8.9.4)
+    return uniqueItems = Array.from(new Set(T));
+     for (i = 0; i < (T.length/2); i++) { 
+  	    Temp.push(T[i]);
+	}
+  debugger
+	return Temp;
+}
+solution([3, 4, 7, 7, 6, 6]);
