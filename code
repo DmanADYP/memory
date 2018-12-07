@@ -4,4 +4,17 @@ function reverse(str){
   });
 }
 
-alert(reverse('abcdx'));s
+alert(reverse('abcdx'));
+
+
+function cap(str){
+	strTemp = '';
+	str.split(' ').forEach((item)=>{
+  
+  strTemp = strTemp +item[0].toUpperCase()+item.slice(1)+ ' ';
+  });
+  
+  return strTemp;
+}
+
+alert(cap('a short sentence'));
