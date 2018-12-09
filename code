@@ -1,3 +1,23 @@
+function bub(arr){
+
+	var temp;
+	for(i=0; i<arr.length; i++){
+  		//debugger
+  		for(ii=arr.length; ii>=0; ii--){
+      		debugger
+      		if(arr[ii]> arr[ii+1]){
+          		temp = arr[ii];
+              arr[ii] = arr[ii+1];
+              arr[ii+1] = temp;
+          }
+      }
+  }
+  alert(arr);
+  
+}
+
+bub([11, 1,0,2, 7,3])
+
 function reverse(str){
 	return str.split('').reduce((rev, char)=>{
   		return char+ rev;
