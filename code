@@ -1,3 +1,21 @@
+var Node = function (data, next = null){
+		this.data = data;
+    this.next = next;
+}
+
+var LinkedList = function(){
+		this.head = null;
+}
+
+LinkedList.prototype.insertF = function(data){
+			this.head = new Node(data, this.head);
+      console.log(this.head);
+}
+
+var run = new LinkedList();
+run.insertF(5);
+run.insertF(6);
+
 function bub(arr){
 
 	var temp;
