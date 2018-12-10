@@ -82,3 +82,17 @@ function solution(T) {
 	return Temp;
 }
 solution([3, 4, 7, 7, 6, 6]);
+
+function rev(intt){
+//debugger
+		let inttemp = intt.toString().split('');
+		if(Math.sign(intt)== -1){
+    	inttemp = 	inttemp.slice(1);
+    }else{
+    	inttemp.push('-');
+    }
+    
+    return inttemp.reverse().join('');
+}
+
+alert(rev(-51))
