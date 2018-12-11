@@ -96,3 +96,29 @@ function rev(intt){
 }
 
 alert(rev(-51))
+
+
+function max(str){
+	const strMap = {}
+  let max = 0;
+  let maxChar = '';
+  strMap['Dic'] = [...new Set(str)];
+  
+  str.split('').forEach((item)=>{
+  	if(strMap[item]){
+			strMap[item]++;
+      }else{
+      		strMap[item] = 1;
+      }
+  })
+  for(let char of str){
+  	if(strMap[char]> max){
+    	max = strMap[char];
+      maxChar = char;
+      
+    }
+  }
+		debugger
+}
+
+max('adsafasaaa')
