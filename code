@@ -122,3 +122,20 @@ function max(str){
 }
 
 max('adsafasaaa')
+
+function v(str){
+	const vowels = 'aeiou';
+	let vowelMap = {};
+  str.toLowerCase().split('').forEach((item)=>{
+  		if(vowels.includes(item)){
+      	if(vowelMap[item]){
+        		vowelMap[item]++;
+        }else{
+        		vowelMap[item] =1;
+        }
+      }
+  });
+  debugger
+}
+
+v(' a dog barks')
